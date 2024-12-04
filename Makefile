@@ -22,7 +22,7 @@ clean:
 	rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(name)
+	rm -f $(NAME)
 
 re: fclean all
 

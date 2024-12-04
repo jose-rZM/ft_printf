@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   format_numbers.h                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jramire2 <jramire2@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/01 13:46:05 by jramire2          #+#    #+#             */
-/*   Updated: 2024/12/01 13:46:08 by jramire2         ###   ########.fr       */
+/*   Created: 2024/12/04 13:51:43 by jramire2          #+#    #+#             */
+/*   Updated: 2024/12/04 13:51:45 by jramire2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
-#include <stdarg.h>
-#include <stdint.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include "format_numbers.h"
+#ifndef FORMAT_NUMBERS_H
+# define FORMAT_NUMBERS_H
+# include <unistd.h>
 
-static int	print_address(void *ptr);
-static int	handle_format(char format, va_list args);
-int			ft_printf(char const *format, ...);
+
+int putnbr_rec(unsigned int n);
+int ft_putnbr(int n);
+
+#endif
